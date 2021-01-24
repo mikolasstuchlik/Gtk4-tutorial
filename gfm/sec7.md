@@ -56,7 +56,7 @@ So, I will just show you the way how to write the code and avoid the theoretical
 
 Let's define TfeTextView object which is a child object of GtkTextView.
 First, look at the program below.
-
+```c
     #define TFE_TYPE_TEXT_VIEW tfe_text_view_get_type ()
     G_DECLARE_FINAL_TYPE (TfeTextView, tfe_text_view, TFE, TEXT_VIEW, GtkTextView)
 
@@ -90,7 +90,7 @@ First, look at the program below.
     tfe_text_view_new (void) {
       return GTK_WIDGET (g_object_new (TFE_TYPE_TEXT_VIEW, NULL));
     }
-
+```
 If you are curious about the background theory of this program, It's very good for you.
 Because to know the theory is very important for you to program GTK applications.
 Look at GObject API reference.
