@@ -87,7 +87,7 @@ So, I will just show you the way how to write the code and avoid the theoretical
 
 Let's define TfeTextView object which is a child object of GtkTextView.
 First, look at the program below.
-```c
+```{c, attr.source='.numberLines'}
     #define TFE_TYPE_TEXT_VIEW tfe_text_view_get_type ()
     G_DECLARE_FINAL_TYPE (TfeTextView, tfe_text_view, TFE, TEXT_VIEW, GtkTextView)
 
