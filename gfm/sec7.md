@@ -156,7 +156,7 @@ The function `before_close` is invoked when the signal "close-request" is emittd
 The argument win is GtkApplicationWindow, in which the signal "close-request" is defined, and before\_close is the handler.
 `G_CALLBACK` cast is necessary for the handler.
 The program of before\_close is as follows.
-
+```c
      1 static gboolean
      2 before_close (GtkWindow *win, GtkWidget *nb) {
      3   GtkWidget *scr;
@@ -182,7 +182,7 @@ The program of before\_close is as follows.
     23   }
     24   return FALSE;
     25 }
-
+```
 The numbers on the left of items are line numbers in the source code.
 
 - 13: Get the number of pages `nb` has.
